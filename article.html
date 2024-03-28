@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Новость</title>
+	<!-- фавикон -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<!-- стили -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css?_v=20240328111815">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240328111815">
+	
+</head>
+
+<body>
+	<div class="wrapper" id="wrapper">
+		<header class="header" id="header">
+	<div class="header__container">
+		<div class="header__body">
+			<a data-goto="#wrapper" data-goto-header href="#" class="header__logo logo">
+				<div class="logo__icon">
+					<svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M17.9996 17.1L0.599609 6.59998V30H12.3996V22.7L8.19961 20.1V25.7H4.79961V14.1L17.9996 22L31.1996 14.1V25.7H27.7996V20.1L23.5996 22.7V30H35.3996V6.59998L17.9996 17.1Z"
+							fill="#48505F" />
+						<path d="M31.1998 5V0L17.9998 7.9L4.7998 0V5L17.9998 12.8L31.1998 5Z"
+							fill="url(#paint0_linear_1575_306)" />
+						<defs>
+							<linearGradient id="paint0_linear_1575_306" x1="4.7998" y1="7.168" x2="31.2036" y2="7.00075"
+								gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#118DE8" />
+								<stop offset="1" stop-color="#0CCEFD" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="logo__text">
+					<span>telegram</span> master
+				</div>
+			</a>
+			<nav class="header__menu menu">
+				<ul class="menu__list">
+					<li class="menu__item"><a data-goto="#advantages" data-goto-header href="#" class="menu__link">О нас</a></li>
+					<li class="menu__item"><a data-goto="#tool" data-goto-header href="#" class="menu__link">Инструменты</a></li>
+					<li class="menu__item"><a data-goto="#masters" data-goto-header href="#" class="menu__link">лидеры</a></li>
+					<li class="menu__item"><a data-goto="#marketing" data-goto-header href="#" class="menu__link">Маркетинг</a></li>
+					<li class="menu__item"><a data-goto="#community" data-goto-header href="#" class="menu__link">сообщество</a></li>
+				</ul>
+			</nav>
+			<div class="header__actions" data-da=".header__container, 991.98, last">
+				<a href="" class="header__login">Войти</a>
+				<a href="" class="header__registration">
+					<div class="header__icon">
+						<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M8.5625 7.15625L1.25 7.15625C0.78425 7.15625 0.40625 7.53425 0.40625 8C0.40625 8.46575 0.78425 8.84375 1.25 8.84375L8.5625 8.84375C9.02825 8.84375 9.40625 8.46575 9.40625 8C9.40625 7.53425 9.02825 7.15625 8.5625 7.15625Z" fill="white" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M6.27903 6.34629L7.93166 8.00004L6.27903 9.65379C5.94941 9.98229 5.94941 10.5178 6.27903 10.8463C6.60753 11.1759 7.14303 11.1759 7.47153 10.8463L9.72153 8.59629C10.0512 8.26666 10.0512 7.73341 9.72153 7.40379L7.47153 5.15379C7.14303 4.82416 6.60753 4.82416 6.27903 5.15379C5.94941 5.48229 5.94941 6.01779 6.27903 6.34629Z" fill="white" />
+							<path fill-rule="evenodd" clip-rule="evenodd" d="M4.73638 3.07812C5.67125 2.456 6.794 2.09375 8 2.09375C11.2603 2.09375 13.9063 4.73975 13.9063 8C13.9063 11.2602 11.2603 13.9062 8 13.9062C6.794 13.9062 5.67125 13.544 4.73638 12.9219C4.34938 12.6642 3.82512 12.77 3.56637 13.1581C3.30875 13.5451 3.4145 14.0694 3.80262 14.3281C5.00525 15.1269 6.44862 15.5937 8 15.5937C12.1906 15.5937 15.5938 12.1906 15.5938 8C15.5938 3.80937 12.1906 0.40625 8 0.406249C6.44863 0.406249 5.00525 0.873124 3.80263 1.67187C3.4145 1.93062 3.30875 2.45487 3.56638 2.84187C3.82513 3.23 4.34938 3.33575 4.73638 3.07812Z" fill="white" />
+						  </svg>
+					</div>
+					<span>Регистрация</span>
+				</a>
+			</div>
+			<button type="button" class="header__burger burger-menu"><span></span></button>
+		</div>
+	</div>
+</header>
+		<main>
+			<section class="article">
+				<div class="article__container">
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item"><a href="news.html" class="breadcrumbs__link">Новости</a></li>
+							<li class="breadcrumbs__item"><span>Не следует забывать, что герцог графства коронован</span></li>
+						</ul>
+					</div>
+					<div class="article__body">
+						<div class="article__image">
+							<img src="img/news-image3.jpg" alt="">
+						</div>
+						<div class="article__content">
+							<div class="article__date">14.03.2024</div>
+							<h1 class="article__title">Не следует забывать, что герцог графства коронован</h1>
+							<div class="article__text">
+								Каждый из нас понимает очевидную вещь: высококачественный прототип будущего проекта напрямую зависит от модели развития. Наше дело не так однозначно, как может показаться: разбавленное изрядной долей эмпатии, рациональное мышление играет определяющее значение для как самодостаточных, так и внешне зависимых концептуальных решений. Есть над чем задуматься: ключевые особенности структуры проекта, инициированные исключительно синтетически, призваны к ответу! В своём стремлении улучшить пользовательский опыт мы упускаем, что базовые сценарии поведения пользователей могут быть объединены в целые кластеры себе подобных. Лишь интерактивные прототипы лишь добавляют фракционных разногласий и своевременно верифицированы. Предварительные выводы неутешительны: дальнейшее развитие различных форм деятельности, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для экспериментов, поражающих по своей масштабности и грандиозности.
+							</div>
+						</div>
+					</div>
+					<div class="article__block">
+						<h2 class="article__head">
+							<span>другие</span> новости
+						</h2>
+						<div class="article__bg">
+							<div class="article__slider swiper">
+								<div class="article__wrapper swiper-wrapper">	
+										<div class="item-block swiper-slide">
+											<a href="#" class="item-block__image">
+												<img src="img/news-image4.jpg" alt="">
+											</a>
+											<div class="item-block__date">14.03.2024</div>
+											<a href="#" class="item-block__text">Заголовок новости системы или платформы номер 1</a>
+										</div>
+										<div class="item-block swiper-slide">
+											<a href="#" class="item-block__image">
+												<img src="img/news-image5.jpg" alt="">
+											</a>
+											<div class="item-block__date">13.03.2024</div>
+											<a href="#" class="item-block__text">Заголовок новости системы или платформы номер 1</a>
+										</div>
+										<div class="item-block swiper-slide">
+											<a href="#" class="item-block__image">
+												<img src="img/news-image6.jpg" alt="">
+											</a>
+											<div class="item-block__date">12.03.2024</div>
+											<a href="#" class="item-block__text">Заголовок новости системы или платформы номер 1</a>
+										</div>
+										<div class="item-block swiper-slide">
+											<a href="#" class="item-block__image">
+												<img src="img/news-image1.jpg" alt="">
+											</a>
+											<div class="item-block__date">17.03.2024</div>
+											<a href="#" class="item-block__text">Заголовок новости системы или платформы номер 1</a>
+										</div>
+								</div>
+							</div>
+							<div class="article__buttons">
+								<button type="button"
+									class="slider-button slider-button_prev swiper-button-prev article__prev">
+									<svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M3.42187 7.99966L9.57778 2.41504C10.1305 1.86237 10.1305 0.967174 9.57778 0.414504C9.02511 -0.138166 8.12991 -0.138166 7.57726 0.414504L0.416406 6.91163C0.117791 7.21024 -0.0138926 7.60929 0.0107108 8.00034C-0.0138927 8.39139 0.117791 8.79044 0.416406 9.08906L7.57791 15.5855C8.13058 16.1381 9.02578 16.1381 9.57845 15.5855C10.1311 15.0328 10.1311 14.1376 9.57845 13.585L3.42187 7.99966Z"
+											fill="#118DE8" />
+									</svg>
+								</button>
+								<button type="button"
+									class="slider-button slider-button_next swiper-button-next article__next">
+									<svg width="10" height="16" viewBox="0 0 10 16" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M6.57813 8.00034L0.422217 13.585C-0.130453 14.1376 -0.130453 15.0328 0.422216 15.5855C0.974887 16.1382 1.87009 16.1382 2.42274 15.5855L9.58359 9.08837C9.88221 8.78976 10.0139 8.39071 9.98929 7.99966C10.0139 7.60861 9.88221 7.20956 9.58359 6.91094L2.42209 0.414525C1.86942 -0.138144 0.974223 -0.138144 0.421552 0.414525C-0.131118 0.967196 -0.131118 1.86239 0.421552 2.41504L6.57813 8.00034Z"
+											fill="#118DE8" />
+									</svg>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<section class="community" id="community" data-prlx-parent>
+	<div class="community__container">
+		<div class="community__content">
+			<h2 class="community__title title">
+				<span>Сообщество</span>
+				Master matrix
+			</h2>
+			<div class="community__text">
+				Будьте в курсе новостей. Вливайтесь в клуб, общайтесь и перенимайте опыт лучших наставников
+				и единомышленников
+			</div>
+			<div class="community__row">
+				<a href="#" class="community__link">
+					<div class="community__decor">
+						<svg width="18" height="16" viewBox="0 0 18 16" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M7.06288 10.3856L6.76513 14.5736C7.19113 14.5736 7.37563 14.3906 7.59688 14.1708L9.59413 12.2621L13.7326 15.2928C14.4916 15.7158 15.0264 15.4931 15.2311 14.5946L17.9476 1.86557L17.9484 1.86482C18.1891 0.742816 17.5426 0.304066 16.8031 0.579316L0.835633 6.69257C-0.254117 7.11557 -0.237617 7.72307 0.650383 7.99832L4.73263 9.26807L14.2149 3.33482C14.6611 3.03932 15.0669 3.20282 14.7331 3.49832L7.06288 10.3856Z"
+								fill="white" />
+						</svg>
+					</div>
+					<span>Большой чат telegram</span>
+				</a>
+				<a href="#" class="community__link community__link_bg">
+					<div class="community__decor">
+						<svg width="18" height="12" viewBox="0 0 18 12" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M17.254 9.15798C16.7181 8.51518 16.0874 7.96657 15.4907 7.38402C14.9524 6.85892 14.9184 6.55431 15.3512 5.94825C15.8235 5.2868 16.3314 4.65071 16.808 3.99223C17.2529 3.37685 17.7077 2.76315 17.9418 2.02633C18.0903 1.55756 17.9589 1.35051 17.4782 1.26843C17.3954 1.25407 17.3098 1.25332 17.2255 1.25332L14.3735 1.24996C14.0223 1.24474 13.8281 1.39789 13.7039 1.70922C13.5362 2.13004 13.3632 2.5505 13.1635 2.95658C12.7102 3.87733 12.2039 4.76729 11.4942 5.5209C11.3377 5.6871 11.1645 5.89714 10.903 5.81059C10.5758 5.69121 10.4794 5.15212 10.4848 4.96987L10.482 1.67807C10.4186 1.20781 10.3143 0.998141 9.84741 0.906738L6.88485 0.907298C6.48939 0.907298 6.2911 1.06007 6.07994 1.30742C5.95814 1.4503 5.92139 1.54301 6.17172 1.59039C6.66343 1.68366 6.94043 2.00189 7.01393 2.49491C7.13182 3.28265 7.12361 4.07356 7.05571 4.86448C7.03575 5.09541 6.99602 5.32578 6.90443 5.54142C6.76117 5.88035 6.52987 5.94937 6.226 5.74082C5.95086 5.55205 5.75761 5.28568 5.56846 5.01818C4.85794 4.01425 4.29106 2.93159 3.82882 1.7939C3.69526 1.46523 3.46489 1.26601 3.11663 1.2606C2.26099 1.24698 1.40516 1.24474 0.549518 1.26134C0.0346777 1.27104 -0.118842 1.521 0.0908251 1.98772C1.02276 4.06069 2.06009 6.07603 3.41415 7.91192C4.10938 8.85411 4.90756 9.68588 5.93874 10.2753C7.10739 10.9435 8.36539 11.1446 9.69035 11.0827C10.3108 11.0536 10.4971 10.8922 10.5258 10.2738C10.5452 9.85078 10.5932 9.43014 10.8019 9.04998C11.0067 8.6769 11.3169 8.60583 11.6745 8.83788C11.8534 8.9541 12.0041 9.10202 12.1465 9.25796C12.4957 9.63999 12.8324 10.0336 13.1948 10.4027C13.6494 10.8653 14.1879 11.1386 14.8651 11.0828L17.4863 11.0834C17.9086 11.0558 18.1276 10.538 17.8851 10.0666C17.7148 9.73643 17.4913 9.44245 17.254 9.15798Z"
+								fill="white" />
+						</svg>
+					</div>
+					<span>Группа VK</span>
+				</a>
+			</div>
+		</div>
+		<div class="community__media">
+			<div class="community__image" data-prlx-mouse>
+				<img src="img/community-image.png" alt="иконка" data-prlx>
+			</div>
+
+			<div class="community__icon-2" data-prlx-mouse>
+				<img src="img/tool-icon2.png" alt="иконка телеграмма" data-prlx>
+			</div>
+			<div class="community__icon-3" data-prlx-mouse>
+				<img src="img/tool-icon3.png" alt="иконка телеграмма" data-prlx>
+			</div>
+			<div class="community__icon-4" data-prlx-mouse data-prlx-dxr data-prlx-dyr>
+				<img src="img/tool-icon.png" alt="иконка телеграмма" data-prlx>
+			</div>
+		</div>
+	</div>
+	<div class="community__icon" data-prlx-mouse>
+		<img src="img/tool-icon.png" alt="иконка телеграмма" data-prlx>
+	</div>
+</section>
+
+<footer class="footer" id="footer">
+	<div class="footer__container">
+		<div class="footer__top">
+			<a data-goto="#wrapper" data-goto-header href="#" class="footer__logo logo logo_white">
+				<div class="logo__icon">
+					<svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M17.9996 17.1001L0.599609 6.6001V30.0001H12.3996V22.7001L8.19961 20.1001V25.7001H4.79961V14.1001L17.9996 22.0001L31.1996 14.1001V25.7001H27.7996V20.1001L23.5996 22.7001V30.0001H35.3996V6.6001L17.9996 17.1001Z"
+							fill="white" />
+						<path d="M31.1998 5V0L17.9998 7.9L4.7998 0V5L17.9998 12.8L31.1998 5Z"
+							fill="url(#paint0_linear_1575_145)" />
+						<defs>
+							<linearGradient id="paint0_linear_1575_145" x1="4.7998" y1="7.168" x2="31.2036" y2="7.00075"
+								gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="#118DE8" />
+								<stop offset="1" stop-color="#0CCEFD" />
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+				<div class="logo__text">
+					<span>telegram</span> master
+				</div>
+			</a>
+			<nav class="footer__menu">
+				<ul class="footer__list">
+					<li class="footer__item"><a data-goto="#advantages" data-goto-header href="#" class="footer__link">О нас</a></li>
+					<li class="footer__item"><a data-goto="#tool" data-goto-header href="#" class="footer__link">Инструменты</a></li>
+					<li class="footer__item"><a data-goto="#masters" data-goto-header href="#" class="footer__link">лидеры</a></li>
+					<li class="footer__item"><a data-goto="#marketing" data-goto-header href="#" class="footer__link">Маркетинг</a></li>
+					<li class="footer__item"><a data-goto="#community" data-goto-header href="#" class="footer__link">сообщество</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="footer__bottom">
+			<div class="footer__copy">© Международный бизнес клуб - Telegram Matrix</div>
+			<div class="footer__actions">
+				<a href="#" class="footer__button">Пользовательское соглашение</a>
+				<a href="#" class="footer__button">Политика конфиенциальности</a>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js?_v=20240328111815"></script>
+<script src="js/app.js?_v=20240328111815"></script>
+</body>
+
+</html>
